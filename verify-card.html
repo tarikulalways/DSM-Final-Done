@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head to Head -->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- animate.css -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Gellary-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <!-- font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-tooltip@0.2.1/jquery.tooltip.min.js"></script>
+        <title>D S M</title>
+
+        <!-- Toltip script Hover in navbar-->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </head>
+    <!-- Head to Head -->
+
+    <!-- body start -->
+    <body class="heroimages">
+        <!-- header navbar start -->
+
+        <b class="screen-overlay"></b>
+        <div class="d-lg-none navbar navbar-light cstmBG fixed-top shadow pt-2">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" width="130" alt="Logo" />
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <nav id="navbar_main" class="mobile-offcanvas navbar navbar-dark navbar-expand-lg cstmBG fixed-top shadow fontface2">
+            <div class="offcanvas-header">
+                <div class="row p-1">
+                    <a href="index.html">
+                        <img src="img/logo.png" class="p-2" width="130" alt="Brand Logo" />
+                    </a>
+                    <div class="d-md-none ml-auto">
+                        <button class="btn btn-danger btn-close mt-3 mr-2">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar_main">
+                <ul class="navbar-nav d-none d-sm-block">
+                    <a id="navbar1" class="fixed-top" href="index.html">
+                        <img src="img/logo.png" id="logo" alt="Logo" />
+                    </a>
+                </ul>
+
+                <ul id="navbar144" class="navbar-nav ml-auto fontface2">
+                    <li class="nav-item mainNav">
+                        <a class="nav-link pb-0 active" href="index.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item mainNav dropdown">
+                        <a href="#" class="nav-link pb-0 dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
+                        <div class="dropdown-menu singlemenu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Company Information</a>
+                            <a class="dropdown-item" href="ourteam.html">Director’s Profile</a>
+                            <a class="dropdown-item" href="#">Chairman Message</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mainNav">
+                        <a class="nav-link pb-0" href="contact.html">CONTACT</a>
+                    </li>
+                    <div class="div">
+                        <a href="#" class="card-verify ml-4">Card Verify</a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("logo").style.width = "110px";
+                    document.getElementById("navbar144").style.height = "50px";
+                    document.getElementById("navbar144").style.padding = "0px";
+                } else {
+                    document.getElementById("logo").style.width = "200px";
+                    document.getElementById("navbar144").style.height = "80px";
+                    document.getElementById("navbar144").style.padding = "25px 0px 0px";
+                }
+            }
+        </script>
+        <script>
+            $("[data-trigger]").on("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var offcanvas_id = $(this).attr("data-trigger");
+                $(offcanvas_id).toggleClass("show");
+                $("body").toggleClass("offcanvas-active");
+                $(".screen-overlay").toggleClass("show");
+            });
+
+            $(".btn-close, .screen-overlay").click(function (e) {
+                $(".screen-overlay").removeClass("show");
+                $(".mobile-offcanvas").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+        </script>
+
+        <style>
+            /* ======Navbar Margin ======*/
+            .navmargin {
+                padding-top: 80px;
+            }
+        </style>
+        <div class="navmargin"></div>
+
+        <!-- header navabar end -->
+
+
+        <!-- main content start -->
+
+        <div class="container bgimg" style="height: auto;">
+            <div class="row">
+                <div class="hero-form col-md-5 col-sm-12 m-auto" style="margin-top: 70px !important;">
+                    <div class="card rounded pt-3" style="background-color: #1b1f5b;">
+                        <div class="text-center">
+                            <img src="img/logo.png" width="250" class="img-fluid rounded p-3" style="background-color: #000666;">
+                            <h3 class="text-center text-light font-weight-bold py-3">Card Verify</h3>
+                        </div>
+
+                        <form action="" method="POST">
+                            <div class="col-12"></div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input name="cusName" for="name" type="number" id="name" class="form-control border-0 shadow" placeholder="Card Number">
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit" name="register" class="btn btn-primary btn-block">Verify Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-10 col-sm-12 m-auto">
+                    <h2 class="text-light">Show Card</h2>
+                    <div class="show-table" style="background-color: #000666;">
+                        <table class="table table-bordered">
+                            <thead style="background-color: #007BFF;">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content end -->
+
+
+
+
+
+        <!-- Footer Section -->
+
+        <style>
+            /*social-buttons */
+            .social-buttons a {
+                display: inline-flex;
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: linear-gradient(95deg, #000a66, #00020e);
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+
+            .social-buttons a {
+                transition: 0.2s ease-in;
+            }
+
+            .social-buttons a:hover {
+                transform: scale(1.2);
+            }
+        </style>
+
+        <!-- Footer Section 2 Start -->
+
+        <section class="py-4" style="background: linear-gradient(195deg, rgba(2, 1, 9, 1) 0%, rgba(3, 3, 77, 1) 71%, rgba(1, 0, 13, 1) 100%);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5" style="color: #ccc;">
+                        <h4 class="font-weight-bold text-light">DSM HUMAN RESOURCES SDN. BHD.</h4>
+                        <div>
+                            <p class="mb-2">
+                                <strong><mark>(727507-A)</mark> </strong> <br class="mb-4" />
+                                Wisma Consplant 2, Suite A1101, Level 11 West Wing, No 1, Jalan SS16/1, 47500 Subang Jaya, Selangor, Malaysia
+                            </p>
+                            <p class="mb-2"><strong>Tel: </strong>+6 03 56112525</p>
+                            <p class="mb-2"><strong>Fax: </strong>+6 03 56126565</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 cstmFoterStyle">
+                        <style type="text/css">
+                            .cstmFoterStyle ul > a {
+                                padding: 3px 2px;
+                                color: #ccc;
+                                transition: all 0.3s;
+                            }
+
+                            .cstmFoterStyle ul > a:hover {
+                                color: #fff;
+                                padding-left: 5px;
+                                transform: translateX(0px);
+                            }
+                        </style>
+
+                        <h5 class="text-white"><strong>COMPANY</strong></h5>
+                        <ul class="nav-item p-0">
+                            <a href="#" class="nav-link">&#10151; About Us </a>
+                            <a href="#" class="nav-link">&#10151; Contact Us </a>
+                            <a href="#" class="nav-link">&#10151; Gallary </a>
+                            <a href="#" class="nav-link">&#10151; Video Gallary </a>
+                            <a href="#" class="nav-link">&#10151; Press </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 cstmFoterStyle">
+                        <h5 class="text-white"><strong>HELP</strong></h5>
+                        <ul class="nav-item p-0">
+                            <a href="#" class="nav-link">&#10151; <strong> Email : </strong> info@dsmvisacard.com</a>
+                            <a href="#" class="nav-link">&#10151; <strong> Web : </strong> www.dsmvisacard.com</a>
+                        </ul>
+                        <div class="row">
+                            <div class="col styleFollowUs">
+                                <style>
+                                    @media only screen and (max-width: 600px) {
+                                        .styleFollowUs {
+                                            text-align: center;
+                                        }
+                                    }
+                                </style>
+                                <h5 class="text-uppercase text-white"><strong>Follow Us</strong></h5>
+                                <div class="social-buttons pt-2">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <h5 class="text-light font-weight-bold">DSM HUMAN RESOURCES &#169; 2023</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <hr />
+                        <p class="text-light">
+                            Developed by:
+                            <a href="#" target="_blank" class="text-warning"> <em class="font-weight-bold"> DigitalSolutions.Ltd </em></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+        <!--JS Common Script -->
+        <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- custom javascript -->
+        <script src="js/script.js" type="text/javascript"></script>
+        <!-- Plugin javascript -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+
+            // You can also pass an optional settings object
+            // below listed default settings
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                //startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: "aos-init", // class applied after initialization
+                animatedClassName: "aos-animate", // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: "ease", // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+            });
+        </script>
+        <!--JS Extrnal Script  -->
+        <!-- Gellary -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run(".compact-gallery", { animation: "slideIn" });
+            baguetteBox.run(".cards-gallery", { animation: "slideIn" });
+
+            /* data tooltip */
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+        <!--JS Extrnal Script  -->
+    </body>
+</html>

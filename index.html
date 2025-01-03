@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head to Head -->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- animate.css -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Gellary-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <!-- font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-tooltip@0.2.1/jquery.tooltip.min.js"></script>
+        <title>D S M</title>
+
+        <!-- Toltip script Hover in navbar-->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </head>
+    <!-- Head to Head -->
+
+    <!-- body start -->
+    <body class="heroimages">
+
+        <!-- header navbar start -->
+
+        <b class="screen-overlay"></b>
+        <div class="d-lg-none navbar navbar-light cstmBG fixed-top shadow pt-2">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/logo.png" width="130" alt="Logo" />
+			</a>
+			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		
+		<nav id="navbar_main" class="mobile-offcanvas navbar navbar-dark navbar-expand-lg cstmBG fixed-top shadow fontface2">
+			<div class="offcanvas-header">
+				<div class="row p-1">
+					<a href="index.html">
+						<img src="img/logo.png" class="p-2" width="130" alt="Brand Logo" />
+					</a>
+					<div class="d-md-none ml-auto">
+						<button class="btn btn-danger btn-close mt-3 mr-2">&times;</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="collapse navbar-collapse" id="navbar_main">
+				<ul class="navbar-nav d-none d-sm-block">
+					<a id="navbar1" class="fixed-top" href="index.html">
+						<img src="img/logo.png" id="logo" alt="Logo" />
+					</a>
+				</ul>
+		
+				<ul id="navbar144" class="navbar-nav ml-auto fontface2">
+					<li class="nav-item mainNav">
+						<a class="nav-link pb-0 active" href="index.html">HOME</a>
+					</li>
+		
+					<li class="nav-item mainNav dropdown">
+						<a href="#" class="nav-link pb-0 dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
+						<div class="dropdown-menu singlemenu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Company Information</a>
+							<a class="dropdown-item" href="ourteam.html">Director’s Profile</a>
+							<a class="dropdown-item" href="#">Chairman Message</a>
+						</div>
+					</li>
+		
+					<li class="nav-item mainNav">
+						<a class="nav-link pb-0" href="contact.html">CONTACT</a>
+					</li>
+                    <div class="div">
+                        <a href="verify-card.html" class="card-verify ml-4">Card Verify</a>
+                    </div>
+				</ul>
+			</div>
+		</nav>
+		
+        <script>
+            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("logo").style.width = "110px";
+                    document.getElementById("navbar144").style.height = "50px";
+                    document.getElementById("navbar144").style.padding = "0px";
+                } else {
+                    document.getElementById("logo").style.width = "200px";
+                    document.getElementById("navbar144").style.height = "80px";
+                    document.getElementById("navbar144").style.padding = "25px 0px 0px";
+                }
+            }
+        </script>
+        <script>
+            $("[data-trigger]").on("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var offcanvas_id = $(this).attr("data-trigger");
+                $(offcanvas_id).toggleClass("show");
+                $("body").toggleClass("offcanvas-active");
+                $(".screen-overlay").toggleClass("show");
+            });
+
+            $(".btn-close, .screen-overlay").click(function (e) {
+                $(".screen-overlay").removeClass("show");
+                $(".mobile-offcanvas").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+        </script>
+
+        <style>
+            /* ======Navbar Margin ======*/
+            .navmargin {
+                padding-top: 80px;
+            }
+        </style>
+        <div class="navmargin"></div>
+
+        <!-- header navabar end -->
+
+        <!--Include Page-->
+
+        <!-- WE ARE CREATIVE -->
+        <section>
+            <div class="container bgimg">
+                <div class="row">
+                    <div class="hero-content col-md-7 col-sm-12">
+                        <h1 class="txtstyle345">
+                            PREPAID <br />
+                            VISA CARDS
+                        </h1>
+                        <h3 class="txtstyle346">
+                            For Foreign Workers working & residing in Malaysia <br />
+                            with a valid Malaysian Address.
+                        </h3>
+                        <h4 class="txtstyle347">
+                            <br />
+                            CO-BRANDING WITH <br />
+                            ICT COMMERCE SDN.BHD.
+                        </h4>
+                    </div>
+                    <div class="hero-form col-md-5 col-sm-12 col-sm-mb-3" style="margin-top: 70px;">
+                        <div class="card rounded pt-3" style="background-color: rgba(0, 50, 90, 0.6);">
+                            <div class="text-center">
+                                <img src="img/logo.png" width="250" class="img-fluid rounded p-3" style="background-color: #000666;" />
+                                <h3 class="text-center text-light font-weight-bold py-3">Apply for a Card</h3>
+                            </div>
+
+                            <form action="" method="POST">
+                                <div class="col-12"></div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input name="cusName" for="name" type="text" id="name" class="form-control border-0 shadow" placeholder="Full Name" />
+                                    </div>
+
+                                    <div class="form-group form-group-sm">
+                                        <input name="cusEmail" type="text" id="text" class="form-control border-0 shadow" placeholder="Email address" />
+                                    </div>
+                                    <div class="input-group input-group-sm mb-3 shadow">
+                                        <select class="custom-select custom-select-sm border-0 col-3" id="inputGroupSelect01">
+                                            <option value="1" selected>BD +88</option>
+                                            <option value="2">BD +88</option>
+                                            <option value="3">BD +88</option>
+                                            <option value="4">BD +88</option>
+                                        </select>
+                                        <input name="cusPhone" for="phone" type="text" id="phone" class="form-control form-control-sm border-0 shadow" placeholder="Phone number" />
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox was-validated text-center">
+                                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required />
+                                        <label class="custom-control-label text-muted" for="customControlValidation1">
+                                            <em>
+                                                <small>I agree with the <a href="" class="text-white">Terms and Conditions.</a></small>
+                                            </em>
+                                        </label>
+                                    </div>
+
+                                    <div class="text-center my-3">
+                                        <button type="submit" name="register" class="btn btn-primary btn-block">Apply Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card item content start -->
+        <section id="card-item" class="mt-sm-3">
+            <div class="container">
+                <div class="row p-sm-3" style="background-color: #fff; border-radius: 5px;">
+                    <div class="col-md-5 col-sm-12">
+                        <div class="row py-md-4">
+                            <div class="col-12">
+                                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                    <style type="text/css">
+                                        .btnstyle4554 {
+                                            margin-bottom: -50px;
+                                            font-family: "Rajdhani", sans-serif;
+                                            font-size: 1.5em;
+                                            font-weight: 900 !important;
+                                            text-shadow: 3px 3px 15px white;
+                                        }
+                                        .btnstyle4555 {
+                                            text-shadow: 6px 3px 10px #333;
+                                            margin-bottom: 20px;
+                                        }
+    
+                                        .zoom_img {
+                                            animation: zoom 20s linear infinite alternate;
+                                        }
+    
+                                        @keyframes zoom {
+                                            0% {
+                                                transform: scale(1);
+                                            }
+                                            50% {
+                                                transform: scale(1.2);
+                                            }
+                                            100% {
+                                                transform: scale(1.5);
+                                            }
+                                        }
+                                        .svgcolor1 {
+                                            fill: gray;
+                                            color: gray;
+                                        }
+                                    </style>
+                                    <ol class="carousel-indicators" style="color: gray;">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner p-sm-5">
+                                        <div class="carousel-item active">
+                                            <img src="img/slider/card1.jpg" width="100%" class="image-fluid px-3" alt="..." />
+                                            <div class="carousel-caption d-none d-md-block animated slideInUp">
+                                                <h2 class="btnstyle4554">front side</h2>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/slider/card2.jpg" width="100%" class="image-fluid px-3" alt="..." />
+                                            <div class="carousel-caption animated slideInUp">
+                                                <h2 class="btnstyle4554">Back Side</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="svgcolor1 bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="svgcolor1 bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+    
+                                <style type="text/css">
+                                    .carousel-control-next,
+                                    .carousel-control-prev {
+                                        width: 10%;
+                                    }
+                                </style>
+                                <h5 class="text-center" style="font-weight: 800; text-transform: uppercase;">নিমিষেই টাকা পাঠান দেশে</h5>
+                                <h5 class="text-center py-3" style="font-weight: 800; text-transform: uppercase;">Online Ontime Anytime Anywhere.</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 pt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="subTitle5 py-3">CARD BENEFITS</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="alert alert-primary" role="alert">
+                                    ১. এক নিমিষেই টাকা পাঠান দেশে।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ২. মালয়েশিয়া প্রবাসী বাংলাদেশীদের সহজে ও ঝাঁমেলামুক্তভাবে, বৈধপথে টাকা পাঠানোর সুযোগ দিচ্ছে ডিএসএম ভিসা কার্ড।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৩. প্রবাসীদের নিরাপদ ও ঝুঁকিহীন সেবার নিশ্চয়তা দিচ্ছে ডিএসম। ঘরে বসেই বৈধ পথে টাকা পাঠাতে পারেন আপনিও।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৪. প্রয়োজনীয় তথ্য দিয়ে আজই সংগ্রহ করুন ডিএসম এর ভিসা কার্ড। যেকোন কেনাকাটা কিংবা বিল পরিশোধে ব্যবহার করতে পারেন এ কার্ড।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৫. ডিএসএম ভিসা কার্ড আপনার আমার বিশ্বস্থ মাধ্যম।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৬. এ কার্ড পেতে ভিসার প্রয়োজন নেই, শুধুমাত্র পাসপোর্ট দিয়েই সংগ্রহ করতে পারবেন।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৭. মালয়েশিয়ার যে কোন রাজ্যে, যেকোন শহরে কিংবা গ্রামে থেকেই পেতে পারেন ডিএসএম ভিসা কার্ড।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৮. একই কার্ডে রয়েছে অনেক সেবা। দেশের যে কোন ব্যাংকে টাকা পাঠাতে পারেন। এছাড়া বিকাশ, নগত, রকেটসহ যেকোন মাধ্যমে টাকা পাঠাতে পারেন ডিএসম এ্যাপস ব্যবহার করে।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ৯. আপনাদের সেবায় চালু থাকবে আমাদের ২৪ ঘন্টার কাস্টমার সার্ভিস। যেকোন প্রয়োজনে কল করুন।
+                                </div>
+                                <div class="alert alert-primary" role="alert">
+                                    ১০. বৈধ পথে রেমিটেন্স পাঠান, দেশের অর্থনীতিকে সমৃদ্ধি করুন। সঙ্গে থাকুন ডিএসএম এর।
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card item content end -->
+
+        <section
+        
+            style="
+                background: linear-gradient(
+                    to bottom,
+                    #eee 0%,
+                    rgba(217, 237, 242, 1) 40%,
+                    rgba(173, 217, 228, 1) 100%
+                ); /*
+			background: linear-gradient(0deg, rgba(50,30,30,0) 5%, rgba(0,0,70,60) 30%);
+			background: linear-gradient(to bottom, rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                padding: 70px 0px;
+            "
+        >
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 text-center">
+                        <h1 class="text-uppercase" style="font-family: 'Rajdhani', sans-serif; font-size: 40px; color: #999; opacity: 50%; letter-spacing: 5px; font-weight: 900 !important;">Subscribe</h1>
+                        <small class="text-muted">Subscribe to get offer & updates for your business</small>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="input-group my-4 shadow">
+                            <input type="text" class="form-control form-control-lg border-0 rounded-0" placeholder="Email Address here" aria-label="Email Address here" aria-describedby="button-addon2" />
+                            <button class="btn btn-info border-0 rounded-0 px-md-4" type="button" id="button-addon2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End Of Subscribe -->
+        <!--End of Include Page-->
+
+        <!-- Contact Page -->
+
+        <!-- Footer Section -->
+
+        <style>
+            /*social-buttons */
+            .social-buttons a {
+                display: inline-flex;
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: linear-gradient(95deg, #000a66, #00020e);
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+
+            .social-buttons a {
+                transition: 0.2s ease-in;
+            }
+
+            .social-buttons a:hover {
+                transform: scale(1.2);
+            }
+        </style>
+
+        <!-- Footer Section 2 Start -->
+
+        <section class="py-4" style="background: linear-gradient(195deg, rgba(2, 1, 9, 1) 0%, rgba(3, 3, 77, 1) 71%, rgba(1, 0, 13, 1) 100%);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5" style="color: #ccc;">
+                        <h4 class="font-weight-bold text-light">DSM HUMAN RESOURCES SDN. BHD.</h4>
+                        <div>
+                            <p class="mb-2">
+                                <strong><mark>(727507-A)</mark> </strong> <br class="mb-4" />
+                                Wisma Consplant 2, Suite A1101, Level 11 West Wing, No 1, Jalan SS16/1, 47500 Subang Jaya, Selangor, Malaysia
+                            </p>
+                            <p class="mb-2"><strong>Tel: </strong>+6 03 56112525</p>
+                            <p class="mb-2"><strong>Fax: </strong>+6 03 56126565</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 cstmFoterStyle">
+                        <style type="text/css">
+                            .cstmFoterStyle ul > a {
+                                padding: 3px 2px;
+                                color: #ccc;
+                                transition: all 0.3s;
+                            }
+
+                            .cstmFoterStyle ul > a:hover {
+                                color: #fff;
+                                padding-left: 5px;
+                                transform: translateX(0px);
+                            }
+                        </style>
+
+                        <h5 class="text-white"><strong>COMPANY</strong></h5>
+                        <ul class="nav-item p-0">
+                            <a href="#" class="nav-link">&#10151; About Us </a>
+                            <a href="#" class="nav-link">&#10151; Contact Us </a>
+                            <a href="#" class="nav-link">&#10151; Gallary </a>
+                            <a href="#" class="nav-link">&#10151; Video Gallary </a>
+                            <a href="#" class="nav-link">&#10151; Press </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 cstmFoterStyle">
+                        <h5 class="text-white"><strong>HELP</strong></h5>
+                        <ul class="nav-item p-0">
+                            <a href="#" class="nav-link">&#10151; <strong> Email : </strong> info@dsmvisacard.com</a>
+                            <a href="#" class="nav-link">&#10151; <strong> Web : </strong> www.dsmvisacard.com</a>
+                        </ul>
+                        <div class="row">
+                            <div class="col styleFollowUs">
+                                <style>
+                                    @media only screen and (max-width: 600px) {
+                                        .styleFollowUs {
+                                            text-align: center;
+                                        }
+                                    }
+                                </style>
+                                <h5 class="text-uppercase text-white"><strong>Follow Us</strong></h5>
+                                <div class="social-buttons pt-2">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <h5 class="text-light font-weight-bold">DSM HUMAN RESOURCES &#169; 2023</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <hr />
+                        <p class="text-light">
+                            Developed by:
+                            <a href="#" target="_blank" class="text-warning"> <em class="font-weight-bold"> DigitalSolutions.Ltd </em></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+        <!--JS Common Script -->
+        <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- custom javascript -->
+        <script src="js/script.js" type="text/javascript"></script>
+        <!-- Plugin javascript -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+
+            // You can also pass an optional settings object
+            // below listed default settings
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                //startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: "aos-init", // class applied after initialization
+                animatedClassName: "aos-animate", // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: "ease", // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+            });
+        </script>
+        <!--JS Extrnal Script  -->
+        <!-- Gellary -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run(".compact-gallery", { animation: "slideIn" });
+            baguetteBox.run(".cards-gallery", { animation: "slideIn" });
+
+            /* data tooltip */
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+        <!--JS Extrnal Script  -->
+    </body>
+</html>
+<!-- Footer -->
