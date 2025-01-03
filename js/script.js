@@ -112,3 +112,35 @@ function drags(dragElement, resizeElement, container) {
 // End ba-Slider (After-Before)
 // jquery end
 
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("logo").style.width = "110px";
+      document.getElementById("navbar144").style.height = "50px";
+      document.getElementById("navbar144").style.padding = "0px";
+  } else {
+      document.getElementById("logo").style.width = "200px";
+      document.getElementById("navbar144").style.height = "80px";
+      document.getElementById("navbar144").style.padding = "25px 0px 0px";
+  }
+}
+
+$("[data-trigger]").on("click", function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var offcanvas_id = $(this).attr("data-trigger");
+  $(offcanvas_id).toggleClass("show");
+  $("body").toggleClass("offcanvas-active");
+  $(".screen-overlay").toggleClass("show");
+});
+
+$(".btn-close, .screen-overlay").click(function (e) {
+  $(".screen-overlay").removeClass("show");
+  $(".mobile-offcanvas").removeClass("show");
+  $("body").removeClass("offcanvas-active");
+});
+

@@ -89,47 +89,6 @@
             </div>
         </nav>
 
-        <script>
-            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-            window.onscroll = function () {
-                scrollFunction();
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("logo").style.width = "110px";
-                    document.getElementById("navbar144").style.height = "50px";
-                    document.getElementById("navbar144").style.padding = "0px";
-                } else {
-                    document.getElementById("logo").style.width = "200px";
-                    document.getElementById("navbar144").style.height = "80px";
-                    document.getElementById("navbar144").style.padding = "25px 0px 0px";
-                }
-            }
-        </script>
-        <script>
-            $("[data-trigger]").on("click", function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                var offcanvas_id = $(this).attr("data-trigger");
-                $(offcanvas_id).toggleClass("show");
-                $("body").toggleClass("offcanvas-active");
-                $(".screen-overlay").toggleClass("show");
-            });
-
-            $(".btn-close, .screen-overlay").click(function (e) {
-                $(".screen-overlay").removeClass("show");
-                $(".mobile-offcanvas").removeClass("show");
-                $("body").removeClass("offcanvas-active");
-            });
-        </script>
-
-        <style>
-            /* ======Navbar Margin ======*/
-            .navmargin {
-                padding-top: 80px;
-            }
-        </style>
         <div class="navmargin"></div>
 
         <!-- header navabar end -->
@@ -208,32 +167,6 @@
 
         <!-- Footer Section -->
 
-        <style>
-            /*social-buttons */
-            .social-buttons a {
-                display: inline-flex;
-                text-decoration: none;
-                color: white;
-                font-size: 14px;
-                width: 35px;
-                height: 35px;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                background: linear-gradient(95deg, #000a66, #00020e);
-                border-radius: 50%;
-                margin-right: 8px;
-            }
-
-            .social-buttons a {
-                transition: 0.2s ease-in;
-            }
-
-            .social-buttons a:hover {
-                transform: scale(1.2);
-            }
-        </style>
-
         <!-- Footer Section 2 Start -->
 
         <section class="py-4" style="background: linear-gradient(195deg, rgba(2, 1, 9, 1) 0%, rgba(3, 3, 77, 1) 71%, rgba(1, 0, 13, 1) 100%);">
@@ -252,19 +185,6 @@
                     </div>
 
                     <div class="col-md-3 cstmFoterStyle">
-                        <style type="text/css">
-                            .cstmFoterStyle ul > a {
-                                padding: 3px 2px;
-                                color: #ccc;
-                                transition: all 0.3s;
-                            }
-
-                            .cstmFoterStyle ul > a:hover {
-                                color: #fff;
-                                padding-left: 5px;
-                                transform: translateX(0px);
-                            }
-                        </style>
 
                         <h5 class="text-white"><strong>COMPANY</strong></h5>
                         <ul class="nav-item p-0">
@@ -284,13 +204,6 @@
                         </ul>
                         <div class="row">
                             <div class="col styleFollowUs">
-                                <style>
-                                    @media only screen and (max-width: 600px) {
-                                        .styleFollowUs {
-                                            text-align: center;
-                                        }
-                                    }
-                                </style>
                                 <h5 class="text-uppercase text-white"><strong>Follow Us</strong></h5>
                                 <div class="social-buttons pt-2">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>

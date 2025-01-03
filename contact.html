@@ -90,47 +90,6 @@
 				</ul>
 			</div>
 		</nav>
-        <script>
-            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-            window.onscroll = function () {
-                scrollFunction();
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("logo").style.width = "110px";
-                    document.getElementById("navbar144").style.height = "50px";
-                    document.getElementById("navbar144").style.padding = "0px";
-                } else {
-                    document.getElementById("logo").style.width = "200px";
-                    document.getElementById("navbar144").style.height = "80px";
-                    document.getElementById("navbar144").style.padding = "25px 0px 0px";
-                }
-            }
-        </script>
-        <script>
-            $("[data-trigger]").on("click", function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                var offcanvas_id = $(this).attr("data-trigger");
-                $(offcanvas_id).toggleClass("show");
-                $("body").toggleClass("offcanvas-active");
-                $(".screen-overlay").toggleClass("show");
-            });
-
-            $(".btn-close, .screen-overlay").click(function (e) {
-                $(".screen-overlay").removeClass("show");
-                $(".mobile-offcanvas").removeClass("show");
-                $("body").removeClass("offcanvas-active");
-            });
-        </script>
-
-        <style>
-            /* ======Navbar Margin ======*/
-            .navmargin {
-                padding-top: 80px;
-            }
-        </style>
         <div class="navmargin"></div>
 
         <div class="bgimgcontact">
@@ -145,53 +104,10 @@
                 <div class="container">
                     <div class="row animated slideInUp">
                         <div class="col-12 pb-3" style="overflow-x: hidden;">
-                            <style>
-                                .styContactUs {
-                                    color: white;
-                                    font-family: sans-serif;
-                                    font-size: 40px;
-                                    font-weight: 900;
-                                    padding-top: 30px;
-                                    text-align: center;
-                                    letter-spacing: 3px;
-                                    text-shadow: 3px 3px 6px #333;
-                                }
-                                @media only screen and (max-width: 600px) {
-                                    .styContactUs {
-                                        font-size: 35px;
-                                        letter-spacing: 0px;
-                                    }
-                                }
-                            </style>
                             <h1 class="text-uppercase styContactUs">Contact <span class="text-danger">Us</span></h1>
                             <h4 class="font-weight-bold text-center text-light pt-3">Tel: +60356112525</h4>
                         </div>
                         <div class="col-12 pb-4" style="overflow-x: hidden;">
-                            <style type="text/css">
-                                .cstmsocialStyle a {
-                                    height: 45px;
-                                    width: 50px;
-                                    border-bottom: 3px solid red;
-                                    border-radius: 20%;
-                                    padding: 5px;
-                                    margin-right: 10px;
-                                }
-                                .cstmsocialStyle a:hover {
-                                    border-bottom: 5px solid red;
-                                    border-radius: 50%;
-                                }
-                                .cstmsocialStyle a {
-                                    transition: all 0.2s;
-                                }
-
-                                .cstmsocialStyle a:hover {
-                                    transform: translateY(-5px);
-                                }
-
-                                .cstmsocialStyle img {
-                                    width: 25px;
-                                }
-                            </style>
                             <form class="form-inline justify-content-center cstmsocialStyle">
                                 <a href="tel:+880 1985000700" target="_blank">
                                     <span class="px-2" data-toggle="tooltip" title="Contact With WhatsApp"> <img src="icon/whatsapp32.png" /> </span>
@@ -284,51 +200,10 @@
                 </div>
             </section>
         </div>
-        <style type="text/css">
-            .bgimgcontact {
-                padding-top: 280px;
-                background-image: url("img/about/support_service.jpg");
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                position: relative;
-            }
-            @media only screen and (max-width: 600px) {
-                .bgimgcontact {
-                    padding-top: 130px;
-                }
-            }
-        </style>
 
         <!-- Map -->
 
         <!-- Footer Section -->
-
-        <style>
-            /*social-buttons */
-            .social-buttons a {
-                display: inline-flex;
-                text-decoration: none;
-                color: white;
-                font-size: 14px;
-                width: 35px;
-                height: 35px;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                background: linear-gradient(95deg, #000a66, #00020e);
-                border-radius: 50%;
-                margin-right: 8px;
-            }
-
-            .social-buttons a {
-                transition: 0.2s ease-in;
-            }
-
-            .social-buttons a:hover {
-                transform: scale(1.2);
-            }
-        </style>
 
         <!-- Footer Section 2 Start -->
 
@@ -348,19 +223,6 @@
                     </div>
 
                     <div class="col-md-3 cstmFoterStyle">
-                        <style type="text/css">
-                            .cstmFoterStyle ul > a {
-                                padding: 3px 2px;
-                                color: #ccc;
-                                transition: all 0.3s;
-                            }
-
-                            .cstmFoterStyle ul > a:hover {
-                                color: #fff;
-                                padding-left: 5px;
-                                transform: translateX(0px);
-                            }
-                        </style>
 
                         <h5 class="text-white"><strong>COMPANY</strong></h5>
                         <ul class="nav-item p-0">
@@ -380,13 +242,6 @@
                         </ul>
                         <div class="row">
                             <div class="col styleFollowUs">
-                                <style>
-                                    @media only screen and (max-width: 600px) {
-                                        .styleFollowUs {
-                                            text-align: center;
-                                        }
-                                    }
-                                </style>
                                 <h5 class="text-uppercase text-white"><strong>Follow Us</strong></h5>
                                 <div class="social-buttons pt-2">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>

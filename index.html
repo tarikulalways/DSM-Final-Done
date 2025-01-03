@@ -89,48 +89,6 @@
 				</ul>
 			</div>
 		</nav>
-		
-        <script>
-            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-            window.onscroll = function () {
-                scrollFunction();
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("logo").style.width = "110px";
-                    document.getElementById("navbar144").style.height = "50px";
-                    document.getElementById("navbar144").style.padding = "0px";
-                } else {
-                    document.getElementById("logo").style.width = "200px";
-                    document.getElementById("navbar144").style.height = "80px";
-                    document.getElementById("navbar144").style.padding = "25px 0px 0px";
-                }
-            }
-        </script>
-        <script>
-            $("[data-trigger]").on("click", function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                var offcanvas_id = $(this).attr("data-trigger");
-                $(offcanvas_id).toggleClass("show");
-                $("body").toggleClass("offcanvas-active");
-                $(".screen-overlay").toggleClass("show");
-            });
-
-            $(".btn-close, .screen-overlay").click(function (e) {
-                $(".screen-overlay").removeClass("show");
-                $(".mobile-offcanvas").removeClass("show");
-                $("body").removeClass("offcanvas-active");
-            });
-        </script>
-
-        <style>
-            /* ======Navbar Margin ======*/
-            .navmargin {
-                padding-top: 80px;
-            }
-        </style>
         <div class="navmargin"></div>
 
         <!-- header navabar end -->
@@ -186,7 +144,7 @@
 
                                     <div class="custom-control custom-checkbox was-validated text-center">
                                         <input type="checkbox" class="custom-control-input" id="customControlValidation1" required />
-                                        <label class="custom-control-label text-muted" for="customControlValidation1">
+                                        <label class="custom-control-label" for="customControlValidation1">
                                             <em>
                                                 <small>I agree with the <a href="" class="text-white">Terms and Conditions.</a></small>
                                             </em>
@@ -212,39 +170,6 @@
                         <div class="row py-md-4">
                             <div class="col-12">
                                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                                    <style type="text/css">
-                                        .btnstyle4554 {
-                                            margin-bottom: -50px;
-                                            font-family: "Rajdhani", sans-serif;
-                                            font-size: 1.5em;
-                                            font-weight: 900 !important;
-                                            text-shadow: 3px 3px 15px white;
-                                        }
-                                        .btnstyle4555 {
-                                            text-shadow: 6px 3px 10px #333;
-                                            margin-bottom: 20px;
-                                        }
-    
-                                        .zoom_img {
-                                            animation: zoom 20s linear infinite alternate;
-                                        }
-    
-                                        @keyframes zoom {
-                                            0% {
-                                                transform: scale(1);
-                                            }
-                                            50% {
-                                                transform: scale(1.2);
-                                            }
-                                            100% {
-                                                transform: scale(1.5);
-                                            }
-                                        }
-                                        .svgcolor1 {
-                                            fill: gray;
-                                            color: gray;
-                                        }
-                                    </style>
                                     <ol class="carousel-indicators" style="color: gray;">
                                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -278,13 +203,7 @@
                                         </span>
                                     </a>
                                 </div>
-    
-                                <style type="text/css">
-                                    .carousel-control-next,
-                                    .carousel-control-prev {
-                                        width: 10%;
-                                    }
-                                </style>
+
                                 <h5 class="text-center" style="font-weight: 800; text-transform: uppercase;">নিমিষেই টাকা পাঠান দেশে</h5>
                                 <h5 class="text-center py-3" style="font-weight: 800; text-transform: uppercase;">Online Ontime Anytime Anywhere.</h5>
                             </div>
@@ -375,29 +294,7 @@
         <!-- Footer Section -->
 
         <style>
-            /*social-buttons */
-            .social-buttons a {
-                display: inline-flex;
-                text-decoration: none;
-                color: white;
-                font-size: 14px;
-                width: 35px;
-                height: 35px;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                background: linear-gradient(95deg, #000a66, #00020e);
-                border-radius: 50%;
-                margin-right: 8px;
-            }
-
-            .social-buttons a {
-                transition: 0.2s ease-in;
-            }
-
-            .social-buttons a:hover {
-                transform: scale(1.2);
-            }
+            
         </style>
 
         <!-- Footer Section 2 Start -->
@@ -418,19 +315,6 @@
                     </div>
 
                     <div class="col-md-3 cstmFoterStyle">
-                        <style type="text/css">
-                            .cstmFoterStyle ul > a {
-                                padding: 3px 2px;
-                                color: #ccc;
-                                transition: all 0.3s;
-                            }
-
-                            .cstmFoterStyle ul > a:hover {
-                                color: #fff;
-                                padding-left: 5px;
-                                transform: translateX(0px);
-                            }
-                        </style>
 
                         <h5 class="text-white"><strong>COMPANY</strong></h5>
                         <ul class="nav-item p-0">
@@ -450,13 +334,6 @@
                         </ul>
                         <div class="row">
                             <div class="col styleFollowUs">
-                                <style>
-                                    @media only screen and (max-width: 600px) {
-                                        .styleFollowUs {
-                                            text-align: center;
-                                        }
-                                    }
-                                </style>
                                 <h5 class="text-uppercase text-white"><strong>Follow Us</strong></h5>
                                 <div class="social-buttons pt-2">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
